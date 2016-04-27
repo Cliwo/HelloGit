@@ -5,7 +5,6 @@ public abstract class Shape {
 	
 	public Shape()
 	{
-		
 	}
 	public int getId()
 	{
@@ -15,14 +14,8 @@ public abstract class Shape {
 	{
 		id=i;
 	}
-	public double calculateArea()
-	{
-		return 1.0;
-	}
-	public double calculatePerimeter()
-	{
-		return 1.0;
-	}
+	abstract public double calculateArea();
+	abstract public double calculatePerimeter();
 	public void printfInfo()
 	{
 		System.out.println("ID : " + getId());
