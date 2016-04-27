@@ -1,10 +1,11 @@
+//Cliwo Á¤½ÂÂù , student ID : 201520926 , Email: cliwo@naver.com
 
 public abstract class Shape {
-	
 	private int id;
 	
 	public Shape()
 	{
+		Math.sqrt(4);
 	}
 	public int getId()
 	{
