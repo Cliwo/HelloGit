@@ -17,15 +17,15 @@ public class ShapeTest {
 		int i;
 		ArrayList<Shape> shapeArr= new ArrayList<Shape>();
 		
-		Rectangle rec= new Rectangle(13, 7);
+		Rectangle rec= new Rectangle(8, 5);
 		rec.setId(1);
 		shapeArr.add(rec);
 		
-		Circle cir= new Circle(18);
+		Circle cir= new Circle(5);
 		cir.setId(2);
 		shapeArr.add(cir);
 		
-		Triangle tri= new Triangle(5, 9, 12);
+		Triangle tri= new Triangle(3, 3, 5);
 		tri.setId(3);
 		shapeArr.add(tri);
 		

@@ -4,13 +4,14 @@ public class Rectangle extends Shape {
 	public double height;
 
 	public Rectangle(double width, double height) {
-
+		if(width <0 || height <0)
+			return;
 		this.width = width;
 		this.height = height;
 	}
 
 	public double calculateArea() {
-		if (width < 0 && height < 0) {
+		if (width < 0 || height < 0) {
 			System.out.println("Invalid values");
 			return 0;
 		}
@@ -21,7 +22,7 @@ public class Rectangle extends Shape {
 
 	public double calculatePerimeter() {
 
-		if (width < 0 && height < 0) {
+		if (width < 0 || height < 0) {
 			System.out.println("Invalid values");
 			return 0;
 		}

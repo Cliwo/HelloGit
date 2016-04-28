@@ -1,31 +1,28 @@
 public class Circle extends Shape{
 	  private double radius;
 	  
-     
-
-	  public double getRadius(double radius) {
+	  public double getRadius() {
 			return radius;
       }
       
-	  public void setSide1(double radius) {
+	  public void setRadius(double radius) {
+			if(radius<0)
+				return;
 			this.radius = radius;
  	  }
        
       public double calculateArea() {
-		   if (radius<=0) {
-				return 0;
-           }
            return Math.PI * radius * radius;
 	  }
 		 
 	  public double calculatePerimeter() {
-		   if (radius<=0) {
-				return 0;
-           }
+		   
            return Math.PI * 2 * radius;
 	  }
 	  
       public Circle(double r){
+		 if(r<0)
+			 return;
 		 radius = r;
 	  }
       
