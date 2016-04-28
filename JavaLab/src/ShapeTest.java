@@ -15,10 +15,6 @@ public class ShapeTest {
 		Rectangle rec= new Rectangle(7, 25);
 		shapeCol.add(rec);
 		
-		
-		
-		
-		
 	}
 	
 	public void processShape(Shape x){
